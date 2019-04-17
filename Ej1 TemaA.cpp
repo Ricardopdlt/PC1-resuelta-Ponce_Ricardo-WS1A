@@ -13,10 +13,15 @@ float precioTerreno(float a, float b, float c)
 }
 
 int main()
-{
+
+{//entrada
+
 	float metros;
 	float preciodolar;
 	float cambio;
+	float resultado;
+
+//logica
 
 	printf("Ingrese el tamaño en metros cuadrados del terreno: ");
 	cin >> metros;
@@ -24,8 +29,10 @@ int main()
 	cin >> preciodolar;
 	printf("Ingrese el tipo de cambio: ");
 	cin >> cambio;
+	resultado = precioTerreno(metros, preciodolar, cambio);
 
-	float resultado = precioTerreno(metros, preciodolar, cambio);
+//salida
+
 	cout << "El precio total de venta en soles del terreno es: " << resultado;
 
 	_getch();

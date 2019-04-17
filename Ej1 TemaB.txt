@@ -1,0 +1,31 @@
+Algoritmo Ej1TemaB
+	//entrada
+	Escribir "Ingrese sus años de trabajo: "
+	leer años //años de trabajo
+	Escribir "Ingrese su sueldo: "
+	leer sueldo
+	
+	si años <=3 entonces
+		escribir "Se otorgará un bono de 4%"
+		sueldobono <- sueldo*1.04
+		escribir "Su sueldo ahora es: " sueldobono
+	FinSi
+	
+	si años >3 Y años <=5 Entonces
+		escribir "Se otorgará un bono de 6%"
+		sueldobono <- sueldo*1.06
+		escribir "Su sueldo ahora es: " sueldobono
+	FinSi
+	
+	si años >5 Y años <=10 Entonces
+		escribir "Se otorgará un bono de 10%"
+		sueldobono <- sueldo*1.1
+		escribir "Su sueldo ahora es: " sueldobono
+	FinSi
+	
+	si años >10 Entonces
+		escribir "Se otorgará un bono de 15%"
+		sueldobono <- sueldo*1.15
+		escribir "Su sueldo ahora es: " sueldobono
+	FinSi
+FinAlgoritmo
